@@ -1,0 +1,21 @@
+name: Documentation update
+description: Suggest a documentation improvement
+title: "[Chore] <title>"
+labels: ["type: documentation", "status: triage"]
+assignees:
+  - rekeye
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Please describe your issue
+      description: Is your issue related to some problem if so please describe it clearly
+      placeholder: Example. The documentation lacks [...]
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: If you have any additional information please put it here
+  - type: markdown
+    attributes:
+      value: "Thanks for completing our form!"

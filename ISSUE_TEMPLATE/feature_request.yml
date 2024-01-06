@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest a new idea for the project
+title: "[Feature] <title>"
+labels: ["type: feature request", "status: triage"]
+assignees:
+  - rekeye
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Please describe your feature
+      description: Is your feature related to some problem if so please describe it clearly
+      placeholder: Example. I'm always frustrated when [...]
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you would accept
+      description: What would you like the feature to look like, what should it do, etc. If you can think of any edge cases please describe them.
+  - type: textarea
+    id: alterative
+    attributes:
+      label: Do you accept any alternatives
+      description: Can you think of any alternative solutions for this? If so please describe them
+  - type: textarea
+    id: images
+    attributes:
+      label: Screenshots
+      description: Please provide any appropriate images that could help to understand your feature
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: If you have any additional information which doesnt fit in previous fields please put it here
+  - type: markdown
+    attributes:
+      value: "Thanks for completing our form!"

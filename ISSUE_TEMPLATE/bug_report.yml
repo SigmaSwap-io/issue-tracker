@@ -1,0 +1,79 @@
+name: 🐞 Bug Report
+description: File a bug report
+title: "[Bug] <title>"
+labels: ["type: bug", "status: triage"]
+assignees:
+  - rekeye
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear and concise description of what the bug is.
+      placeholder: Tell us what you see!
+  - type: checkboxes
+    id: does-it-exist
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+        - label: I have searched the existing issues
+          required: true
+  - type: textarea
+    attributes:
+      label: Current Behavior
+      description: A concise description of what you're experiencing.
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: A concise description of what you expected to happen.
+  - type: textarea
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. In this environment...
+        2. With this config...
+        3. Run '...'
+        4. See error...
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: On which environment did this bug occur?
+      options:
+        - Development
+        - Staging
+        - Prod
+  - type: dropdown
+    id: device
+    attributes:
+      label: On which device were you testing this behavior
+      multiple: true
+      options:
+        - Desktop
+        - iOS
+        - Android
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: Shell
+  - type: markdown
+    attributes:
+      value: "Thanks for completing our form!"

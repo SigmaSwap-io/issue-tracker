@@ -1,0 +1,25 @@
+name: Dependency update
+description: Suggest a dependency update
+title: "[Chore(deps)] <title>"
+labels: ["type: dependency", "status: triage"]
+assignees:
+  - rekeye
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Please describe your issue
+      description: Is your update related to some problem if so please describe it clearly
+  - type: textarea
+    id: security
+    attributes:
+      label: Is this a security issue?
+      description: Is you issue security based if so please provide relevant documentation and describe it clearly
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: If you have any additional information please put it here
+  - type: markdown
+    attributes:
+      value: "Thanks for completing our form!"
